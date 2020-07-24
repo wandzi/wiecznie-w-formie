@@ -1,0 +1,17 @@
+@import "../styles/variables.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: $mainFont;
+  overflow-y: hidden;
+}
+main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 90vh;
+}
+

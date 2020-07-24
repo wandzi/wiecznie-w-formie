@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.background-video {
+    position: fixed;
+    left: -400px;
+    margin-right: 0 !important;
+    padding: 0;
+    width: 100vw;
+    z-index: -100;
+    overflow-y: hidden; 
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .background-video {
+        width: auto;
+        height: 100%;
+        display: block; margin: auto;
+    }
+}
