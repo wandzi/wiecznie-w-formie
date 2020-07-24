@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.about-me {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bgBlack;
+    color: $white;
+    .my-photo {
+        width: 200px;
+        height: 200px;
+        margin-top: 60px;
+        border-radius: 50%;
+    }
+    .hello {
+        font-weight: 300;
+        font-size: 2.7rem;
+    }
+    .description-about-me {
+        width: 90%;
+        text-justify: inter-word;
+        text-align: center;
+    }
+}

@@ -11,6 +11,7 @@ nav {
       position: absolute;
       right: 10px;
       top: 15px;
+      z-index: 10;
       i {
         background-color: #fff;
         border-radius: 2px;
@@ -26,6 +27,7 @@ nav {
         animation-direction:reverse;
       }
       i:nth-child(2) {
+        width: 65%;
         margin: 5px 0;
         -webkit-animation:outM 0.8s backwards;
         animation:outM 0.8s backwards;
@@ -55,11 +57,8 @@ nav {
     }
 }
     
-    /* ANIMATION */
-    
    
 a {
-    margin-right: 40px;
     font-weight: 600;
     font-size: 0.7rem;
     letter-spacing: 1.5px;
@@ -67,10 +66,6 @@ a {
     text-transform: uppercase;
     color: $white;
 }
-a:last-child {
-    margin-right: 70px;
-}
-
 
   /* Overlay Nav */
   
@@ -81,7 +76,7 @@ a:last-child {
   z-index: 3;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.644);
+  background: hsla(0, 0%, 0%, 0.960);
   overflow-y: hidden;
   transition: 1s;
 }
@@ -95,9 +90,9 @@ a:last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
   .logo {
-    margin-left: 70px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
     background-image: url(../../images/logo.svg);
     background-repeat: no-repeat;
   }
@@ -108,12 +103,16 @@ a:last-child {
   justify-content: center;
   flex-direction: row;
 }
+.overlay-content > a:first-child {
+  padding: 0 !important;
+}
 .menu-item {
   margin-right: 5px;
   font-size: 2rem;
 }
 .overlay a {
   padding: 30px;
+  padding-top: 15px;
   text-decoration: none;
   font-size: 2rem;
   color: #FFFFFF;
@@ -133,14 +132,18 @@ a:last-child {
   color: #FFFFFF;
 }
 
+/* ANIMATION */
+    
 
 @-webkit-keyframes inM{
     50%{-webkit-transform:rotate(0deg);}
     100%{-webkit-transform:rotate(45deg);}
     }
     @keyframes inM{
-    50%{transform:rotate(0deg);}
-    100%{transform:rotate(45deg);}
+    50%{transform:rotate(0deg);
+        width: 65%;}
+    100%{transform:rotate(45deg);
+        width: 100%;}
     }
     
     @-webkit-keyframes outM{
@@ -195,7 +198,7 @@ a:last-child {
     50%{transform: translateY(-9px) rotate(0deg);}
     100%{transform: translateY(-9px) rotate(135deg);}
     }
-    
+
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
