@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from 'gatsby'
 
 import myPhoto from '../../images/me.jpeg'
 import './AboutMe.scss'
