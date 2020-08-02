@@ -1,6 +1,8 @@
 import React from "react"
 
 import myPhoto from '../../images/me.jpeg'
+import myChest from '../../images/IMG_9020.jpg'
+import myBiceps from '../../images/IMG_8800.jpg'
 import './AboutMe.scss'
 
 
@@ -25,7 +27,7 @@ const AboutMe = () => (
                 trójbój siłowy, dwubój olimpijski, wspinaczka, akrobatyka, gimnastyka, pływanie i wiele innych, wliczając w to sporty 
                 drużynowe i sezonowe.
             </p>
-
+            <img alt="My chest" className="my-chest" src={myChest} />
             <p>
                 Aktualnie jestem na końcówce studiów magisterskich na kierunku Trener osobisty z Dietetyką Sportową, na Katowickim Awfie. 
                 Podczas trwania studiów ukończyłem wiele dodatkowych kursów, w tym instruktor sportów siłowych, kalisteniki, 
@@ -37,6 +39,7 @@ const AboutMe = () => (
                 do każdego klienta, żeby przybliżyć go do osiągnięcia zamierzonych celów. Trenerem jestem od 4 lat i mam nadzieję, 
                 że podczas kolejnych lat zdobędę Twoje zaufanie! <span role="img" aria-label="Smile">😊</span>
             </p>
+            <img alt="My biceps" className="my-biceps" src={myBiceps} />
         </div>
 
     </section>  
