@@ -9,6 +9,15 @@
     z-index: -100;
     overflow-y: hidden; 
 }
+.filter {
+    background-color: rgba(0, 0, 0, 0.651);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -50;
+}
 
 @media (min-aspect-ratio: 16/9) {
     .background-video {
@@ -20,6 +29,25 @@
     .background-video {
         width: auto;
         height: 100%;
-        display: block; margin: auto;
+        display: block; 
+        margin: auto;
     }
+}
+
+.video-button {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    margin-left: -100px;
+    padding: 10px 25px;
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 5px;
+    font-family: $mainFont;
+    font-size: 1.3rem;
+    font-weight: 100;
+    z-index: 10;
+    text-transform: none;
+    cursor: pointer;
 }
