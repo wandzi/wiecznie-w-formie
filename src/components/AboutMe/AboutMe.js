@@ -7,7 +7,7 @@ import './AboutMe.scss'
 
 
 const AboutMe = () => (
-    <section className="about-me">
+        <section className="about-me">
         <img alt="Me" className="my-photo" src={myPhoto} />
         <h1 className="hello">Cześć!</h1>
         <div className="description-about-me">
@@ -44,5 +44,8 @@ const AboutMe = () => (
 
     </section>  
 )
+
+    
+
 
 export default AboutMe

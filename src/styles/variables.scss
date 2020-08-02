@@ -5,5 +5,13 @@ $mainFont: 'Raleway';
 
 // Colors 
 $white: #FFFFFF;
+$blue: #2892d7;
 $bgBlack: #141414;
 
+//mixins
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

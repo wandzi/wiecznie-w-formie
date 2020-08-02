@@ -1,23 +1,49 @@
 @import '../../styles/variables.scss';
 
-.faq-site {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.faq__site {
+    @include display-flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: $bgBlack;
     .kicker {
         margin-top: 80px;
-        margin-bottom: 40px;
         color: $white;
         font-weight: 300;
         font-size: 2.7rem;
         text-align: center;
     }
     .my-photo {
-        margin: 15px 0px;
+        margin: 25px 0px;
         width: 90%;
         border-radius: 20px;
+    }
+    .faq__list {
+        @include display-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        .list-item {
+            @include display-flex;
+            color: $white;
+            h2 {
+                color: $blue;
+                text-align: center;
+                font-weight: 300;
+            }
+            p {
+                text-align: justify;
+            }
+            p:last-child {
+                text-align: justify;
+            }
+        }
+    }
+    .note {
+        width: 90%;
+        font-size: 0.8rem;
+        color: $blue;
+        text-align: center;
+        margin-top: 20px;
     }
 }
