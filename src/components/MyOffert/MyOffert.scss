@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.offert {
+    @include display-flex;
+    width: 100vw;
+
+    background-color: $bgBlack;
+    color: $white;
+    .offert__kicker {
+        margin-top: 80px;
+        color: $white;
+        font-weight: 300;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .offert__main--list {
+        list-style-type: none;
+        .offert__list-item {
+        
+        }
+    }
+    .offert__item-topic {
+        color: $blue; 
+    }
+}

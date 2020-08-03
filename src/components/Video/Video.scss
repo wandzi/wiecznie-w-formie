@@ -10,13 +10,35 @@
     overflow-y: hidden; 
 }
 .filter {
-    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
     position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.589);
     z-index: -50;
+    .video-logo {
+        width: 200px;
+    
+    }
+    .video-button {
+        padding: 10px 25px;
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: 5px;
+        font-family: $mainFont;
+        font-size: 1.3rem;
+        font-weight: 100;
+        z-index: 10;
+        text-transform: none;
+        cursor: pointer;
+    }
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -34,20 +56,3 @@
     }
 }
 
-.video-button {
-    position: fixed;
-    top: 75%;
-    left: 50%;
-    margin-left: -100px;
-    padding: 10px 25px;
-    color: $white;
-    background-color: transparent;
-    border: 1px solid $white;
-    border-radius: 5px;
-    font-family: $mainFont;
-    font-size: 1.3rem;
-    font-weight: 100;
-    z-index: 10;
-    text-transform: none;
-    cursor: pointer;
-}
