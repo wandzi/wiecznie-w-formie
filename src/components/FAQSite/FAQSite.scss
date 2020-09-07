@@ -1,30 +1,30 @@
 @import '../../styles/variables.scss';
 
-.faq__site {
-    @include display-flex;
-    width: 100vw;
+.faq {
+    @include display-flex-column;
+    width: 100%;
     height: auto;
     background-color: $bgBlack;
-    .kicker {
+    .faq__kicker {
         margin-top: 80px;
         color: $white;
         font-weight: 300;
         font-size: 2.7rem;
         text-align: center;
     }
-    .my-photo {
+    .faq__my-photo {
         margin: 25px 0px;
         width: 90%;
         border-radius: 20px;
     }
     .faq__list {
-        @include display-flex;
+        @include display-flex-column;
         list-style-type: none;
         margin: 0;
         padding: 0;
         width: 90%;
         .list-item {
-            @include display-flex;
+            @include display-flex-column;
             color: $white;
             h2 {
                 color: $blue;
@@ -39,7 +39,7 @@
             }
         }
     }
-    .note {
+    .faq__note {
         width: 90%;
         font-size: 0.8rem;
         color: $blue;

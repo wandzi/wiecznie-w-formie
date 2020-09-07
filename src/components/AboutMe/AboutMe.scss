@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .about-me {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
         border-radius: 20px;
     }
     .description-about-me {
-        @include display-flex;
+        @include display-flex-column;
         margin-bottom: 30px;
         width: 90%;
         text-align: justify;

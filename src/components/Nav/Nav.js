@@ -26,7 +26,7 @@ const Nav = () => {
                 <div className="overlay-content">
                     <Link to="/"><div className="logo"></div></Link>
                     <Link to="/o-mnie">O mnie</Link> 
-                    <Link to="/faq">FAQ</Link>
+                    <Link to="/FAQ">FAQ</Link>
                     <Link to="/blog">Blog</Link>
                     <Link to="/oferta">Oferta</Link>
                     <Link to="/kontakt">Kontakt</Link>

@@ -4,9 +4,9 @@ import myPhoto from '../../images/IMG_8803.jpg'
 import './FAQSite.scss'
 
 const FAQSite = () => (
-  <section className="faq__site">
-    <h1 className="kicker">Czeka Cię pierwszy trening?</h1>
-    <img alt="Me" className="my-photo" src={myPhoto} />
+  <section className="faq">
+    <h1 className="faq__kicker">Czeka Cię pierwszy trening?</h1>
+    <img alt="Me" className="faq__my-photo" src={myPhoto} />
     <ul className="faq__list">
 
       <li className="list-item">
@@ -54,7 +54,7 @@ const FAQSite = () => (
 
     </ul>
 
-    <p className="note">Ta rubryczka będzie stale powiększana, wraz z zadawanymi przez Was pytaniami.</p>
+    <p className="faq__note">Ta rubryczka będzie stale powiększana, wraz z zadawanymi przez Was pytaniami.</p>
   </section>
 )
 

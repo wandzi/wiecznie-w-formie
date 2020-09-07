@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.contact-me {
+    @include display-flex-column;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bgBlack;
+    .contact-me__kicker {
+        margin-top: 30px;
+        color: $white;
+        font-weight: 300;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .contact-me__logo {
+        margin-top: -40px;
+        width: 45%;
+    }
+    .contact-me__info {
+        width: 90%;
+    }
+}
+
+.contact-me__info {
+    margin-top: -30px;
+    .info__detail {
+        display: flex;
+
+        color: $white;
+        align-items: center;
+        justify-content: flex-start;
+        &:first-child {
+            font-size: 1.2rem;
+        }
+    }
+    .info__social-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        @include display-flex-row;
+    }
+    .info__icon {
+        padding: 10px;
+        width: 50px;
+    }
+}

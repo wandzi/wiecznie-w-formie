@@ -10,9 +10,16 @@ $blue: #2892d7;
 $bgBlack: #141414;
 
 //mixins
-@mixin display-flex {
+@mixin display-flex-column {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@mixin display-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }

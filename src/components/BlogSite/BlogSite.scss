@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.blog-section {
+    width: 100vw;
+    height: 100vh;
+
+    font-size: 2rem;
+    color: $white;
+    background-color: $bgBlack;
+    @include display-flex-column;
+}
