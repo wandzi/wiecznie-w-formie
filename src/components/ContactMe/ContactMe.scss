@@ -22,7 +22,11 @@
 }
 
 .contact-me__info {
+    @include display-flex-column;
     margin-top: -30px;
+    .info-container {
+        width: 340px;
+    }
     .info__detail {
         display: flex;
 
@@ -43,5 +47,31 @@
     .info__icon {
         padding: 10px;
         width: 50px;
+    }
+    .info__contact-form {
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contact-me .contact-me__logo {
+        margin-top: -40px;
+        width: 269px;
+    } 
+    .contact-me__info .info__contact-form {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-me .contact-me__logo {
+        margin-top: -40px;
+        width: 269px;
+    } 
+    .contact-me__info .info__contact-form {
+        margin: 40px 0;
+        font-size: 1.8rem;
     }
 }

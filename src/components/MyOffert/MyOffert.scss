@@ -30,3 +30,17 @@
         color: $blue; 
     }
 }
+
+@media screen and (min-width: 500px) {
+    .offert .offert__photo {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .offert .offert__photo {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 45%;
+    }
+}

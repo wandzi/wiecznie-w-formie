@@ -39,6 +39,12 @@
 }
 
 @media screen and (min-width: 1400px) {
+    .about-me .my-photo {
+        width: 400px;
+        height: 400px;
+        margin-top: 60px;
+        border-radius: 50%;
+    }
     .about-me .about-me__container {
         @include display-flex-row;  
         margin-top: 150px;
@@ -46,11 +52,11 @@
     .about-me__container:last-child {
         flex-direction: row-reverse;
     }
-    .about-me__description_parahraph {
+    .about-me__description_paraghraph {
         width: 60%;
         margin-right: 10%;
     }
-    .about-me__description_parahraph-last {
+    .about-me__description_paraghraph-last {
         margin-left: 10%;
         margin-right: 0;
     }

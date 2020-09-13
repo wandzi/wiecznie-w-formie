@@ -14,7 +14,7 @@ const AboutMe = () => (
             <p>Miło że zawitałeś na mojej stronie, dlatego chciałbym żebyś czegoś się o mnie dowiedział!</p>
 
             <div className="about-me__container">
-                <div className="about-me__description_parahraph">
+                <div className="about-me__description_paraghraph">
                     <p>
                         Nazywam się Adam Dąbrowski, a sport od zawsze zajmował sporą część mojego życia. 
                         Nigdy nie zdarzyło mi się rywalizować na najwyższych szczeblach, 
@@ -34,7 +34,7 @@ const AboutMe = () => (
             </div>
 
             <div className="about-me__container">
-                <div className="about-me__description_parahraph-last">
+                <div className="about-me__description_paraghraph-last">
                     <p>
                         Aktualnie jestem na końcówce studiów magisterskich na kierunku Trener osobisty z Dietetyką Sportową, na Katowickim Awfie. 
                         Podczas trwania studiów ukończyłem wiele dodatkowych kursów, w tym instruktor sportów siłowych, kalisteniki, 
