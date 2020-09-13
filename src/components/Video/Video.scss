@@ -56,4 +56,37 @@
         margin: auto;
     }
 }
+@media screen and (min-width: 355px){
+    .background-video {
+        position: fixed;
+        left: -280px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .background-video {
+        position: fixed;
+        left: -200px;
+    }
+}
+@media screen and (min-width: 500px){
+    .background-video {
+        position: fixed;
+        left: -100px;
+    }
+}
+
+@media screen and (min-width: 679px){
+    .background-video {
+        position: fixed;
+        left: -50px;
+    }
+}
+
+@media screen and (min-width: 731px) {
+    .background-video {
+        position: fixed;
+        left: 0;
+    }
+}
 

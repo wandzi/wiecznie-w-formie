@@ -24,10 +24,44 @@
         width: 90%;
         border-radius: 20px;
     }
-    .description-about-me {
+    .about-me__description {
         @include display-flex-column;
         margin-bottom: 30px;
         width: 90%;
         text-align: justify;
+    }
+    .about-me__container {
+        @include display-flex-column;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .about-me .about-me__container {
+        @include display-flex-row;  
+        margin-top: 150px;
+    }
+    .about-me__container:last-child {
+        flex-direction: row-reverse;
+    }
+    .about-me__description_parahraph {
+        width: 60%;
+        margin-right: 10%;
+    }
+    .about-me__description_parahraph-last {
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    .about-me__container .my-chest {
+        margin: 10px 0px;
+        width: 600px;
+        border-radius: 20px;
+    }
+    .about-me__container .my-biceps {
+        margin: 10px 0px;
+        width: 600px;
+        border-radius: 20px;
     }
 }
