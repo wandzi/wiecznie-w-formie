@@ -18,17 +18,6 @@
         font-size: 2.7rem;
         text-align: center;
     }
-    .offert__main-list {
-        width: 90vw;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-    }
-    .offert__item-topic {
-        color: $blue; 
-    }
 }
 
 @media screen and (min-width: 500px) {

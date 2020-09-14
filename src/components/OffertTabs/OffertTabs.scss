@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+
+.offert__main-list {
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.offert__item-topic {
+    color: $blue; 
+}
+
+.react-tabs__tab-list {
+    border: 0; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.react-tabs__tab--selected {
+    background: transparent !important;
+    border-color: $blue !important;
+    color: black !important;
+    border: none !important;
+}
