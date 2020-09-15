@@ -1,13 +1,13 @@
 import React from 'react'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import './OffertTabs.scss'
 
 const OffertTabs = () => (
   <Tabs>
     <TabList>
-      <Tab>Treningi</Tab>
-      <Tab>Żywienie</Tab>
-      <Tab>Pakiet</Tab>
+      <Tab><h1>Treningi</h1></Tab>
+      <Tab><h1>Żywienie</h1></Tab>
+      <Tab><h1>Pakiet</h1></Tab>
     </TabList>
 
     <TabPanel>

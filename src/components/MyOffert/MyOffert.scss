@@ -2,10 +2,12 @@
 
 .offert {
     @include display-flex-column;
+    @include gradient-background;
     width: 100%;
 
-    background-color: $bgBlack;
     color: $white;
+    padding-bottom: 30px;
+    
     .offert__photo {
         width: 100%;
         width: 90%;

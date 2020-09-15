@@ -1,6 +1,5 @@
 @import "../../styles/variables.scss";
 
-
 .offert__main-list {
     width: 90vw;
     margin: 0;
@@ -13,16 +12,21 @@
 .offert__item-topic {
     color: $blue; 
 }
-
+.react-tabs__tab {
+    border: none;
+}
 .react-tabs__tab-list {
-    border: 0; 
-    margin: 0; 
-    padding: 0; 
+    margin: 20px 0;
+    padding-bottom: 5px;
+    padding: 0;
+    justify-content: space-around !important;
+    list-style-type: none;
+    @include display-flex-row;
 }
 
 .react-tabs__tab--selected {
     background: transparent !important;
     border-color: $blue !important;
-    color: black !important;
-    border: none !important;
+    color: $yellow !important;
+    border-bottom: 3px solid $yellow !important;
 }

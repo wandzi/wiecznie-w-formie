@@ -2,9 +2,9 @@
 
 .faq {
     @include display-flex-column;
+    @include gradient-background;
     width: 100%;
     height: auto;
-    background-color: $bgBlack;
     .faq__kicker {
         margin-top: 80px;
         color: $white;

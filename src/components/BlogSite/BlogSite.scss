@@ -6,6 +6,6 @@
 
     font-size: 2rem;
     color: $white;
-    background-color: $bgBlack;
+    @include gradient-background;
     @include display-flex-column;
 }
