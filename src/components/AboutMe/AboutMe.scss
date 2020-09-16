@@ -10,8 +10,8 @@
     @include gradient-background;
     
     .my-photo {
-        width: 200px;
-        height: 200px;
+        width: 200px !important;
+        height: 200px !important;
         margin-top: 60px;
         border-radius: 50%;
     }
@@ -24,6 +24,10 @@
         margin: 30px 0px;
         width: 90%;
         border-radius: 20px;
+        clip-path: polygon(50% 0%, 74% 16%, 100% 0, 100% 70%, 81% 71%, 74% 100%, 30% 76%, 0 100%, 0 39%, 17% 41%);
+    }
+    .my-biceps {
+        clip-path: polygon(50% 0%, 79% 24%, 100% 12%, 100% 70%, 87% 96%, 54% 81%, 19% 100%, 0% 70%, 31% 23%, 20% 10%);
     }
     .about-me__description {
         @include display-flex-column;

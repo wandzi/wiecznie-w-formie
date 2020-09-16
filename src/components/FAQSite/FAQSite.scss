@@ -16,6 +16,7 @@
         margin: 25px 0px;
         width: 90%;
         border-radius: 20px;
+        clip-path: polygon(0 0, 44% 11%, 100% 0, 83% 94%, 64% 79%, 28% 97%, 0 73%, 16% 34%);
     }
     .faq__list {
         @include display-flex-column;

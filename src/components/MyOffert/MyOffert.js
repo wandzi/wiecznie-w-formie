@@ -1,16 +1,37 @@
 import React from 'react'
-import myBack from '../../images/IMG_9077-3.jpg'
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+
 import OffertTabs from '../OffertTabs/OffertTabs'
 import './MyOffert.scss'
 
-const MyOffert = () => (
-    <section className="offert">
-        <h1 className="offert__kicker">Moja oferta</h1>
-        <img alt="Me" className="offert__photo" src={myBack} />
-        
-        <OffertTabs />
-       
-    </section>
-)
+const MyOffert = () => {
+    
+    const data = useStaticQuery(graphql`
+          query MyOffert {
+              myBack: file(relativePath: {eq: "IMG_8803.jpg"}) {
+                  id
+                  childImageSharp {
+                    fixed {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
+              }
+          }
+      `)
+
+    return (
+        <section className="offert">
+            <h1 className="offert__kicker">Moja oferta</h1>
+            <Img
+                fixed={data.myBack.childImageSharp.fixed}
+                className="offert__photo"
+            />
+
+            <OffertTabs />
+
+        </section>
+    )
+}
 
 export default MyOffert
