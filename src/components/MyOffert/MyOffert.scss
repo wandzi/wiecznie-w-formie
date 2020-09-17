@@ -2,21 +2,18 @@
 
 .offert {
     @include display-flex-column;
-    @include gradient-background;
     width: 100%;
-
-    color: $white;
     padding-bottom: 30px;
-    
+    color: $white;
+    background-color: $white;
     .offert__photo {
         width: 100%;
         width: 90%;
         border-radius: 20px;
-        clip-path: polygon(70% 0, 88% 21%, 76% 53%, 98% 100%, 47% 88%, 2% 96%, 11% 46%, 4% 2%, 38% 11%);
     }
     .offert__kicker {
         margin-top: 60px;
-        color: $white;
+        color: $blue;
         font-weight: 300;
         font-size: 2.7rem;
         text-align: center;

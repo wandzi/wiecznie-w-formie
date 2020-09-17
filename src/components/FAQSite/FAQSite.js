@@ -8,7 +8,7 @@ const FAQSite = () => {
   
   const data = useStaticQuery(graphql`
         query FAQSite {
-            myPhoto: file(relativePath: {eq: "IMG_8803.jpg"}) {
+            myPhoto: file(relativePath: {eq: "2.jpg"}) {
                 id
                 childImageSharp {
                   fixed {

@@ -1,22 +1,22 @@
 @import '../../styles/variables.scss';
 
 .faq {
-    @include display-flex-column;
-    @include gradient-background;
     width: 100%;
     height: auto;
+    background-color: $white;
+    color: $black;
+    @include display-flex-column;
     .faq__kicker {
         margin-top: 80px;
-        color: $white;
+        color: $blue;
         font-weight: 300;
         font-size: 2.7rem;
         text-align: center;
     }
     .faq__my-photo {
-        margin: 25px 0px;
+        margin: 0px 0px;
         width: 90%;
         border-radius: 20px;
-        clip-path: polygon(0 0, 44% 11%, 100% 0, 83% 94%, 64% 79%, 28% 97%, 0 73%, 16% 34%);
     }
     .faq__list {
         @include display-flex-column;
@@ -26,7 +26,6 @@
         width: 90%;
         .list-item {
             @include display-flex-column;
-            color: $white;
             h2 {
                 color: $blue;
                 text-align: center;
@@ -56,6 +55,9 @@
 }
 
 @media screen and (min-width: 700px) {
+    .faq__kicker {
+        margin-bottom: -30px;
+    }
     .faq .faq__my-photo {
         margin-top: 100px;
         margin-bottom: 50px;

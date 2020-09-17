@@ -7,12 +7,10 @@ $mainFont: 'Raleway';
 $yellow: #f0ec0b;
 $white: #FFFFFF;
 $blue: #2892d7;
+$black: #161616;
+$gray: #2e2e2e;
 
-//mixins
-@mixin gradient-background {
-    background: #252525;
-    background: radial-gradient(circle, #252525 0%, #141414 100%);
-}
+//Mixins
 @mixin display-flex-column {
     display: flex;
     align-items: center;

@@ -5,7 +5,7 @@ import './Nav.scss';
 
 const Nav = () => {
     const [menuActive, setMenuState] = useState(false);
-    let isActive, isOpened;
+    let isActive, isOpened, isColored, isHidden;
 
     if(!menuActive) {
         isActive = 'navTrigger';
@@ -13,14 +13,15 @@ const Nav = () => {
     } else {
         isActive = 'navTrigger active'
         isOpened = {height:'100%'}
+        isColored = {backgroundColor: '#FFFFFF'}
     }
     
     return (
         <nav className="nav">
             <div className={isActive} role="button" onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
-                <i></i>
-                <i></i>
-                <i></i>
+                <i style={isColored}></i>
+                <i style={isColored}></i>
+                <i style={isColored}></i>
             </div>
             <div id="myNav" className="overlay" style={isOpened}>
                 <div className="overlay-content">

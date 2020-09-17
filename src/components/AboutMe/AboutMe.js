@@ -12,12 +12,12 @@ const AboutMe = () => {
             myImage: file(relativePath: {eq: "me.jpeg"}) {
                 id
                 childImageSharp {
-                  fixed {
+                  fixed(maxWidth: 3080, quality: 100){
                     ...GatsbyImageSharpFixed
                   }
                 }
             }
-            myChest: file(relativePath: {eq: "IMG_9020.jpg"}) {
+            myChest: file(relativePath: {eq: "3.jpg"}) {
                 id
                 childImageSharp {
                   fixed {
@@ -25,7 +25,7 @@ const AboutMe = () => {
                   }
                 }
             }
-            myBiceps: file(relativePath: {eq: "IMG_8800.jpg"}) {
+            myBiceps: file(relativePath: {eq: "1.jpg"}) {
                 id
                 childImageSharp {
                   fixed {

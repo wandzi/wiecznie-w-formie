@@ -13,7 +13,7 @@ nav {
       top: 20px;
       z-index: 10;
       i {
-        background-color: $white;
+        background-color: $black;
         border-radius: 2px;
         content: '';
         display: block;
@@ -29,6 +29,7 @@ nav {
       i:nth-child(2) {
         width: 65%;
         margin: 5px 0;
+        color: $black;
         -webkit-animation:outM 0.8s backwards;
         animation:outM 0.8s backwards;
         -webkit-animation-direction:reverse;
@@ -129,7 +130,7 @@ a {
   right: 5px;
   font-size: 40px;
   cursor: pointer;
-  color: #FFFFFF;
+  color: $black;
 }
 
 /* ANIMATION */
@@ -151,8 +152,8 @@ a {
     100%{-webkit-transform:rotate(45deg);}
     }
     @keyframes outM{
-    50%{transform:rotate(0deg);}
-    100%{transform:rotate(45deg);}
+    50%{transform:rotate(0deg); color: $white;}
+    100%{transform:rotate(45deg); color: $black;}
     }
     
     @-webkit-keyframes inT{

@@ -5,7 +5,7 @@
     height: 100vh;
 
     font-size: 2rem;
-    color: $white;
-    @include gradient-background;
+    color: $black;
+    background-color: $white;
     @include display-flex-column;
 }
