@@ -5,7 +5,7 @@ import './Nav.scss';
 
 const Nav = () => {
     const [menuActive, setMenuState] = useState(false);
-    let isActive, isOpened, isColored, isHidden;
+    let isActive, isOpened, isColored;
 
     if(!menuActive) {
         isActive = 'navTrigger';

@@ -12,7 +12,7 @@ const AboutMe = () => {
             myImage: file(relativePath: {eq: "me.jpeg"}) {
                 id
                 childImageSharp {
-                  fixed(maxWidth: 3080, quality: 100){
+                  fixed(base64Width: 3080, quality: 100){
                     ...GatsbyImageSharpFixed
                   }
                 }

@@ -1,14 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import video from '../../video/background_movie.mp4'
+import videoMP4 from '../../video/background_movie.mp4'
+import videoWEBM from '../../video/background_movie.webm'
 import Logo from '../../images/logo.svg'
 import './Video.scss'
 
 const Video = () => (
     <>
         <video className="background-video"  autoPlay loop muted>
-            <source src={video} type='video/mp4' />
+            <source src={videoMP4} type="video/mp4" codecs="avc1.42E01E, mp4a.40.2"></source>
+            <source src={videoWEBM}  type="video/ogg"></source>
         </video>
         <div className="filter">
             <img src={Logo} alt="logo" className="video-logo"/>
