@@ -42,26 +42,24 @@ const AboutMe = () => {
                 fixed={data.myImage.childImageSharp.fixed}
                 className="my-photo"
             />
-            <h1 className="hello">Cześć!</h1>
+            <h1 className="hello">Siemka!</h1>
             <div className="about-me__description">
-                <p>Miło że zawitałeś na mojej stronie, dlatego chciałbym żebyś czegoś się o mnie dowiedział!</p>
+                <p>Skoro już tu jesteś, to przeczytaj parę słów o mnie!</p>
 
                 <div className="about-me__container">
                     <div className="about-me__description_paraghraph">
                         <p>
-                            Nazywam się Adam Dąbrowski, a sport od zawsze zajmował sporą część mojego życia.
-                            Nigdy nie zdarzyło mi się rywalizować na najwyższych szczeblach,
-                            za to próbowałem swoich sił w wielu dyscyplinach sportowych, z których zawsze wyciągałem wiedzę,
-                            jak być lepszą wersją samego siebie, ruszać się lepiej i cieszyć się życiem bez bólu i kontuzji.
-                    </p>
+                            Sport od zawsze był ważną częścią mojego życia. Próbowałem wielu dyscyplin sportowych,
+                            jednak najwięcej czasu poświęciłem kalistenice i szeroko pojętemu treningowi siłowemu.
+
+                        </p>
 
                         <p>
-                            Podczas treningów i edukacji, najwięcej uwagi poświęciłem treningowi z masą własnego ciała– czyli kalistenice.
-                            To dzięki niej zafascynowałem się zdolnościami ludzkiego ciała, jego kontrolą i harmonią, w połączeniu z ponad przeciętną
-                            siłą i świetną sylwetką. W międzyczasie moje zainteresowanie kierowało się ku dyscyplinom tj. kulturystyka,
-                            trójbój siłowy, dwubój olimpijski, wspinaczka, akrobatyka, gimnastyka, pływanie i wiele innych, wliczając w to sporty
-                            drużynowe i sezonowe.
-                    </p>
+                            W 2015 roku rozpocząłem naukę na Akademii Wychowania Fizycznego w Katowicach, gdzie uzyskałem wykształcenie wyższe.
+                            Aktualnie kontynuuje kształcenie na studiach magisterskich na kierunku Trener Osobisty z Dietetyką Sportową.
+                            W trakcie kształcenia akademickiego uczęszczałem również na wiele kursów poszerzając swoją wiedzę na temat treningu
+                            i możliwości ciała ludzkiego. Posiadam tytuł Trenera Przygotowania Motorycznego oraz dietetyka sportowego.
+                        </p>
                     </div>
                     <Img
                         fixed={data.myChest.childImageSharp.fixed}
@@ -72,21 +70,33 @@ const AboutMe = () => {
                 <div className="about-me__container">
                     <div className="about-me__description_paraghraph-last">
                         <p>
-                            Aktualnie jestem na końcówce studiów magisterskich na kierunku Trener osobisty z Dietetyką Sportową, na Katowickim Awfie.
-                            Podczas trwania studiów ukończyłem wiele dodatkowych kursów, w tym instruktor sportów siłowych, kalisteniki,
-                            czy o programowaniu treningu sportowego.
-                    </p>
+                            Łącząc zdobytą wiedzę teoretyczną z długoletnią praktyką, jestem w stanie świadczyć usługi trenerskie oraz 
+                            dietetyczne na najwyższym poziomie. W pracy cenię sobie indywidualne podejście, dokładność oraz profesjonalizm. 
+                            Treningi prowadzone są w oparciu o obszerny wywiad oraz przeprowadzoną wcześniej diagnostykę, co pozwala na 
+                            świadome, bezpieczne i efektowne prowadzenie treningów. 
+                        </p>
 
                         <p>
-                            Łącząc wiedzę praktyczną, zdobytą podczas wielu lat treningów, z teoretyczną, staram się w sposób kompleksowy podejść
-                            do każdego klienta, żeby przybliżyć go do osiągnięcia zamierzonych celów. Trenerem jestem od 4 lat i mam nadzieję,
-                        że podczas kolejnych lat zdobędę Twoje zaufanie! <span role="img" aria-label="Smile">😊</span>
+                            Stale się kształcę i poszerzam swoje kompetencję w oparciu o najnowsze badania naukowe, dzięki czemu masz pewność,
+                             będziesz prowadzony w najlepszy możliwy sposób.
                         </p>
+                        <section>
+                            <h1 className="about-me__list-heading">Moje specjalizacje:</h1>
+                            <ul>
+                                <li className="about-me__list-item">Kalistenika</li>
+                                <li className="about-me__list-item">Trening siłowy</li>
+                                <li className="about-me__list-item">Przygotowanie motoryczne</li>
+                                <li className="about-me__list-item">Trening funkcjonalny</li>
+                                <li className="about-me__list-item">Dietetyka sportowa</li>
+                            </ul>
+                        </section>
+                        
                     </div>
                     <Img
                         fixed={data.myBiceps.childImageSharp.fixed}
                         className="my-biceps"
                     />
+                    
                 </div>
             </div>
 

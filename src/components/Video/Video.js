@@ -13,8 +13,8 @@ const Video = () => (
             <source src={videoWEBM}  type="video/ogg"></source>
         </video>
         <div className="filter">
-            <img src={Logo} alt="logo" className="video-logo"/>
-            <Link to="/o-mnie" className="video-button">Poznaj mnie...</Link>
+            <img src={Logo} alt="logo" className="filter__video-logo"/>
+            <Link to="/o-mnie" className="filter__video-button">Poznaj mnie...</Link>
         </div>
     </>
 )

@@ -5,7 +5,6 @@ import phoneIcon from '../../images/icons/phone-icon.svg'
 import mailIcon from '../../images/icons/mail-icon.svg'
 import facebookIcon from '../../images/icons/facebook-icon.svg'
 import instagramIcon from '../../images/icons/instagram-icon.svg'
-import formIcon from '../../images/icons/form-icon.svg'
 import './ContactMe.scss'
 
 
@@ -23,12 +22,12 @@ const ContactMe = () => (
                     <p>kontakt@wiecznie-w-formie.pl</p>
                 </a>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6Zgg_MJkBaufZYiKwDH4XRB5dzx5217IWevNuD6val5EqgQ/viewform?vc=0&c=0&w=1&flr=0" target="_blank" className="info__contact-form">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6Zgg_MJkBaufZYiKwDH4XRB5dzx5217IWevNuD6val5EqgQ/viewform?vc=0&c=0&w=1&flr=0" target="_blank" rel="noreferrer" className="info__contact-form">
                 <p>Formularz kontaktowy</p>
             </a>
             <div className="info__social-container">
-                <a href="https://www.instagram.com/wiecznie_w_formie/" target="_blank" className="social-container_instagram"><img src={facebookIcon} alt="logo" className="info__icon"/></a>
-                <a href="https://www.facebook.com/Wiecznie.W.Formie" target="_blank" className="social-container_facebook"><img src={instagramIcon} alt="logo" className="info__icon"/></a>
+                <a href="https://www.instagram.com/wiecznie_w_formie/" target="_blank" rel="noopener noreferrer" className="social-container_instagram"><img src={facebookIcon} alt="logo" className="info__icon"/></a>
+                <a href="https://www.facebook.com/Wiecznie.W.Formie" target="_blank" rel="noopener noreferrer" className="social-container_facebook"><img src={instagramIcon} alt="logo" className="info__icon"/></a>
             </div>
         </div>
     </section>  

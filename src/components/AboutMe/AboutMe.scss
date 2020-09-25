@@ -1,11 +1,9 @@
 @import '../../styles/variables.scss';
 
 .about-me {
+    @include display-flex-column;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     color: $white;
     background-color: $white;
     color: $black;
@@ -29,16 +27,42 @@
         margin-bottom: 30px;
         width: 90%;
         text-align: justify;
+        .about-me__description_paraghraph-last {
+            @include display-flex-column;
+        }
     }
     .about-me__container {
         @include display-flex-column;
         width: 100%;
         margin-bottom: 30px;
         text-align: justify;
+        .about-me__list-heading {
+            margin: 40 auto;
+            font-size: 1.6rem;
+            letter-spacing: 1px;  
+            text-align: center; 
+            color: $blue;  
+        }
+        .about-me__list-item {
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+        .about-me__list-item:first-child {
+            margin-top: 30px;
+        }
     }
 }
+@media screen and (min-width: 760px) {
 
+    .about-me__list-heading {
+        margin-top: 50px;
+        font-size: 2rem !important;
+        letter-spacing: 5px;  
+    }
+    
+}
 @media screen and (min-width: 1400px) {
+
     .about-me .my-photo {
         width: 400px;
         height: 400px;
@@ -70,4 +94,10 @@
         width: 600px;
         border-radius: 20px;
     }
+    .about-me__list-heading {
+        margin-top: 150px;
+        font-size: 3rem !important;
+        letter-spacing: 5px;  
+    }
+    
 }

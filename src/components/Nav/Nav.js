@@ -7,6 +7,10 @@ const Nav = () => {
     const [menuActive, setMenuState] = useState(false);
     let isActive, isOpened, isColored;
 
+    const handleClick = () => {
+        setMenuState((prevMenuActive) => !prevMenuActive)
+    }
+
     if(!menuActive) {
         isActive = 'navTrigger';
         isOpened = {height:'0%'}
@@ -18,7 +22,7 @@ const Nav = () => {
     
     return (
         <nav className="nav">
-            <div className={isActive} role="button" onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
+            <div className={isActive} role="button" onClick={handleClick} onKeyDown={handleClick}>
                 <i style={isColored}></i>
                 <i style={isColored}></i>
                 <i style={isColored}></i>
@@ -28,9 +32,9 @@ const Nav = () => {
                     <Link to="/"><div className="logo"></div></Link>
                     <Link to="/o-mnie">O mnie</Link> 
                     <Link to="/FAQ">FAQ</Link>
-                    <Link to="/blog">Blog</Link>
                     <Link to="/oferta">Oferta</Link>
                     <Link to="/kontakt">Kontakt</Link>
+                    <Link to="/blog">Blog</Link>
                 </div>
             </div>
         </nav>
