@@ -39,7 +39,7 @@ const FAQSite = () => {
     }, 
     {
       question: '5. Czy istnieje możliwość prowadzenia treningu w plenerze?',
-      answer: `Jak najbardziej!`,
+      answer: `Oczywiście! Jak najbardziej! Z wielką przyjemnością, sam ćwiczę od czasu do czasu w plenerze i polecam!`,
       open: false
     }, 
   ])
@@ -75,15 +75,11 @@ const FAQSite = () => {
           fixed={data.myPhoto.childImageSharp.fixed}
           className="faq__my-photo"
       />
-      
-      <div>
-        <ul className="faq__list">
+      <ul className="faq__list">
         {faqs.map((faq, i) => (
           <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         ))}
-        </ul>
-      </div>
-
+      </ul>
       <p className="faq__note">Ta rubryczka będzie stale powiększana, wraz z zadawanymi przez Was pytaniami.</p>
     </section>
   )

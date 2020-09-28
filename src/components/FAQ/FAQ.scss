@@ -2,14 +2,16 @@
 
 .list-item {
     .list-item__faq-question {
+        margin: 0;
         padding: 20px 0;
         color: $blue;
         font-weight: 300;
         cursor: pointer;
     }
     .list-item__faq-answer {
+        margin-top: 0;
         height: 0;
-        opacity: 0;
+        display: none;
         text-align: justify;
     }
     .list-item__faq-answer--open {
@@ -18,7 +20,7 @@
         margin: 0 auto;
         height: auto;
         opacity: 1;
-        transition: opacity 1.5s, height 1.5s ease-in-out;
+        transition: display 1.5s ease-in-out;
     }
     .list-item__faq-answer:last-child {
         text-align: justify;
