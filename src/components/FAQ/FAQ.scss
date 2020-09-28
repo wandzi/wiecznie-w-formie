@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.list-item {
+    .list-item__faq-question {
+        padding: 20px 0;
+        color: $blue;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .list-item__faq-answer {
+        height: 0;
+        opacity: 0;
+        text-align: justify;
+    }
+    .list-item__faq-answer--open {
+        display: flex;
+        text-align: justify;
+        margin: 0 auto;
+        height: auto;
+        opacity: 1;
+        transition: opacity 1.5s, height 1.5s ease-in-out;
+    }
+    .list-item__faq-answer:last-child {
+        text-align: justify;
+    }
+}
