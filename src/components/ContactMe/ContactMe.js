@@ -26,8 +26,8 @@ const ContactMe = () => (
                 <p>Formularz kontaktowy</p>
             </a>
             <div className="info__social-container">
-                <a href="https://www.instagram.com/wiecznie_w_formie/" target="_blank" rel="noopener noreferrer" className="social-container_instagram"><img src={facebookIcon} alt="logo" className="info__icon"/></a>
-                <a href="https://www.facebook.com/Wiecznie.W.Formie" target="_blank" rel="noopener noreferrer" className="social-container_facebook"><img src={instagramIcon} alt="logo" className="info__icon"/></a>
+                <a href="https://www.instagram.com/wiecznie_w_formie/" target="_blank" rel="noopener noreferrer" className="social-container_instagram"><img src={instagramIcon} alt="logo" className="info__icon"/></a>
+                <a href="https://www.facebook.com/Wiecznie.W.Formie" target="_blank" rel="noopener noreferrer" className="social-container_facebook"><img src={facebookIcon} alt="logo" className="info__icon"/></a>
             </div>
         </div>
     </section>  

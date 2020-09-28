@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 import './Nav.scss';
 
 const Nav = () => {
+
     const [menuActive, setMenuState] = useState(false);
     let isActive, isOpened, isColored;
 
     const handleClick = () => {
         setMenuState((prevMenuActive) => !prevMenuActive)
     }
-
+    
     if(!menuActive) {
         isActive = 'navTrigger';
         isOpened = {height:'0%'}
