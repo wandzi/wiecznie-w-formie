@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"6LaH":function(e,n,t){},vx99:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("qhky"),o=t("Bl7J"),r=(t("6LaH"),function(){return l.a.createElement("section",{className:"blog-section"},l.a.createElement("h1",null,"Blog"),l.a.createElement("p",null,"Coming soon..."))});n.default=function(){return l.a.createElement(o.a,null,l.a.createElement(c.a,{title:"Blog | Wiecznie w formie!",defer:!1}),l.a.createElement(r,null))}}}]);
-//# sourceMappingURL=component---src-pages-blog-js-0ad952bed0e034fd6977.js.map
