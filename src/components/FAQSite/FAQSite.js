@@ -12,7 +12,7 @@ const FAQSite = () => {
       question: '1. Jak przygotować się na pierwszy trening?',
       answer: `Oprócz wygodnego stroju na zmianę, który nie będzie krępował ruchów (konieczne przy diagnostyce), polecam zabrać ze sobą ręcznik
       (szczególnie w obecnej sytuacji epidemiologicznej), wodę oraz ładne skarpetki, bo sporą część diagnostyki przeprowadzimy bez butów.`,
-      open: true
+      open: false
     },  
     {
       question: '2. Jak wygląda pierwsze spotkanie?',

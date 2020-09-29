@@ -51,6 +51,9 @@
             margin-top: 30px;
         }
     }
+    .about-me__specialization-list {
+        flex-direction: row-reverse;
+    }
 }
 @media screen and (min-width: 760px) {
 
@@ -61,7 +64,7 @@
     }
     
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1023px) {
 
     .about-me .my-photo {
         width: 400px;
@@ -70,22 +73,23 @@
         border-radius: 50%;
     }
     .about-me .about-me__container {
-        @include display-flex-row;  
-        margin-top: 150px;
+        @include display-flex-row; 
+        margin: 60px 0;
+        font-size: 1.2rem;
+    }
+    .about-me__container:nth-child(2) {
+        flex-direction: row-reverse;
     }
     .about-me__container:last-child {
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
     .about-me__description_paraghraph {
         width: 60%;
-        margin-right: 10%;
-    }
-    .about-me__description_paraghraph-last {
-        margin-left: 10%;
-        margin-right: 0;
+        margin: 30px;
     }
     .about-me__container .my-chest {
-        margin: 10px 0px;
+        margin-right: 30px;
         width: 600px;
         border-radius: 20px;
     }
@@ -95,9 +99,11 @@
         border-radius: 20px;
     }
     .about-me__list-heading {
-        margin-top: 150px;
-        font-size: 3rem !important;
+        font-size: 4rem !important;
+        margin: 0;
         letter-spacing: 5px;  
     }
-    
+    .about-me__specialization-list {
+        margin: 30px;
+    }
 }

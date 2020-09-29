@@ -11,72 +11,57 @@ const OffertTabs = () => (
     </TabList>
 
     <TabPanel>
-      <ul className="offert__main-list">
-        <li className="offert__list-item">
+      <div className="offert__container">
+        <ul className="offert__main-list">
+          <li className="offert__list-item">
+            <p>Treningi personalne przeznaczone są dla osób, które cenią sobie czas. Wybierając trening ze mną, masz gwarancję wykorzystania 
+              w pełni czasu spędzonego na siłowni. Nauka techniki wykonywania ćwiczeń, odpowiedni ich dobór, dbanie o bezpieczeństwo 
+              i dostosowanie intensywności do możliwości ćwiczącego, to jedne z wielu zalet treningu z trenerem. 
+              Więc jeśli zależy Ci na zoptymalizowaniu treningu i wykorzystanie w pełni godzin spędzonych na siłowni… Nie zastanawiaj się. </p>
             <h3 className="offert__item-topic">1. Pierwsze spotkanie - 50 zł</h3> 
             <p>Zawiera wywiad, badanie diagnostyczne, ustalenie celów oraz prognozowanie ich dokonania</p>
-        </li>
-        <li className="offert__list-item">
-            <h3 className="offert__item-topic">2. Treningi personalne - pakiety</h3> 
+          </li>
+          <li className="offert__list-item">
+            <h3 className="offert__item-topic">2. Trening personalny (możliwość zapłaty za większą ilość treningów w ramach pakietu)</h3> 
             <ul className="list">
-                <li>1 trening - 100 zł</li>
-                <li>4 treningi - 330 zł</li>
-                <li>8 treningów - 600 zł</li>
-                <li>12 treningów - 860 zł</li>
+                <li>1 trening - 80 zł</li>
             </ul>
-        </li>
-        <li className="offert__list-item">
-            <h3 className="offert__item-topic">3. Prowadzenie online:</h3> 
-            <ul className="list">
-                <li>Plan treningowy na okres 6-8 tygodni – 200 zł</li>
-                <li>Każdy kolejny plan treningowy – 150zł</li>
-                <li>Treningi online – 70 zł</li>
-                <li>Analiza aktualnych (nie rozpisanych przeze mnie) planów treningowych – 100 zł</li>
-            </ul>
-        </li>
-      </ul>  
+          </li>
+          <li className="offert__list-item">
+              <h3 className="offert__item-topic">3. Prowadzenie online:</h3> 
+              <ul className="list">
+                  <li>Plan treningowy na okres 6-8 tygodni – 200 zł</li>
+                  <li>Każdy kolejny plan treningowy – 150zł</li>
+                  <li>Treningi online – 70 zł</li>
+              </ul>
+          </li>
+        </ul>  
+      </div>
     </TabPanel>
     <TabPanel>
-      <ul className="offert__main-list">
-        <li>
-            <h3 className="offert__item-topic">1. Współpraca zawierająca konsultacje(online), tygodniowy jadłospis, suplementację, korekty w czasie trwania oraz wsparcie:</h3> 
+      <div className="offert__container">
+        <ul className="offert__main-list">
+          <li>
+            <p>Dieta mylnie kojarzy się z poświęceniem. Oprócz tego, że jest to nieprawda i może być smaczna, prosta oraz syta, 
+              to odpowiednio dobrany model żywienia, pomaga zoptymalizować efekty treningu.
+            </p>
+            <h3 className="offert__item-topic">1. Współpraca zawierająca konsultacje, tygodniowy jadłospis, suplementację, korekty w czasie trwania oraz wsparcie:</h3> 
             <ul className="list">
-                <li>1 miesiąc – 200 zł</li>
-                <li> 2 miesiące – 350 zł</li>
-                <li>3 miesiące - 470 zł</li>
+                <li>1 miesiąc – 169 zł</li>
             </ul>
-        </li>
-        <li>
-            <h3 className="offert__item-topic">2. Konsultacja żywieniowa – 100 zł</h3> 
-            <p>Wywiad, analiza badań krwi oraz zalecenia</p>
-        </li>
-        <li>
-            <h3 className="offert__item-topic">3. Wyliczenie zapotrzebowania energetycznego, dostosowanie makroskładników oraz ułożenie jadłospisu:</h3> 
-            <ul className="list">
-                <li>1 dzień – 50 zł</li>
-                <li>3 dni – 100 zł</li>
-                <li>7 dni – 180 zł</li>
-            </ul>
-        </li>
-        <li>
-            <h3 className="offert__item-topic">4. Suplementacja pod już istniejącą dietę, dostosowana do trybu życia, sportu – 80 zł</h3>
-        </li>
-      </ul>  
+            <h3 className="offert__item-topic">2. Konsultacja żywieniowa – 79zł</h3> 
+          </li>
+        </ul>
+      </div>  
     </TabPanel>
     <TabPanel>
-      <ul className="offert__main-list">
-        <li>
-            <h3 className="offert__item-topic">1. Wspólpraca dietetyczna + treningi</h3> 
-            <ul className="list">
-                <li>1 miesiąc + 4 treningi – 500 zł (-30 zł)</li>
-                <li>1 miesiąc + 8 treningów – 750 zł (-50 zł)</li>
-                <li>1 miesiąc + 12 treningów – 960 zł (-100 zł)</li>
-            </ul>
-        </li>
-        <li>
-            <h3 className="offert__item-topic">2. Współpraca dietetyczna (1 miesiąc) + plan treningowy – 300zł</h3> 
-        </li>
-      </ul>  
+     <div className="offert__container">
+        <p>Jeśli należysz do osób, które chcą osiągnąć spodziewane rezultaty jak najszybciej, a do tego zaoszczędzić, to warto zastanowić się nad tym pakietem </p>
+        <h3 className="offert__item-topic">Współpraca dietetyczna (1 miesiąc) + plan treningowy – 300zł</h3> 
+        <p>Każdy trening trwa pełną godzinę, w przypadku spóźnienia, przy braku możliwości przesunięcia sesji treningowej w czasie, 
+          może nastąpić skrócenie treningu. W przypadku zakupu pakietu treningów, nie 
+        </p>
+      </div>
     </TabPanel>
   </Tabs>
 );

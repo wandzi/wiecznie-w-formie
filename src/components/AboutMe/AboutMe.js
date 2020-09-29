@@ -33,6 +33,14 @@ const AboutMe = () => {
                   }
                 }
             }
+            myBack: file(relativePath: {eq: "4.jpg"}) {
+                id
+                childImageSharp {
+                  fixed {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+            }
         }
     `)
 
@@ -68,7 +76,7 @@ const AboutMe = () => {
                 </div>
 
                 <div className="about-me__container">
-                    <div className="about-me__description_paraghraph-last">
+                    <div className="about-me__description_paraghraph">
                         <p>
                             Łącząc zdobytą wiedzę teoretyczną z długoletnią praktyką, jestem w stanie świadczyć usługi trenerskie oraz 
                             dietetyczne na najwyższym poziomie. W pracy cenię sobie indywidualne podejście, dokładność oraz profesjonalizm. 
@@ -80,16 +88,6 @@ const AboutMe = () => {
                             Stale się kształcę i poszerzam swoje kompetencję w oparciu o najnowsze badania naukowe, dzięki czemu masz pewność,
                              będziesz prowadzony w najlepszy możliwy sposób.
                         </p>
-                        <section>
-                            <h1 className="about-me__list-heading">Moje specjalizacje:</h1>
-                            <ul>
-                                <li className="about-me__list-item">Kalistenika</li>
-                                <li className="about-me__list-item">Trening siłowy</li>
-                                <li className="about-me__list-item">Przygotowanie motoryczne</li>
-                                <li className="about-me__list-item">Trening funkcjonalny</li>
-                                <li className="about-me__list-item">Dietetyka sportowa</li>
-                            </ul>
-                        </section>
                         
                     </div>
                     <Img
@@ -98,8 +96,24 @@ const AboutMe = () => {
                     />
                     
                 </div>
-            </div>
 
+                <div className="about-me__container">
+                    <div className="about-me__specialization-list">
+                        <h1 className="about-me__list-heading">Moje specjalizacje:</h1>
+                        <ul>
+                            <li className="about-me__list-item">Kalistenika</li>
+                            <li className="about-me__list-item">Trening siłowy</li>
+                            <li className="about-me__list-item">Przygotowanie motoryczne</li>
+                            <li className="about-me__list-item">Trening funkcjonalny</li>
+                            <li className="about-me__list-item">Dietetyka sportowa</li>
+                        </ul>
+                    </div>
+                    <Img
+                        fixed={data.myBack.childImageSharp.fixed}
+                        className="my-biceps"
+                    />
+                </div>
+            </div>
         </section>
     )
 }
