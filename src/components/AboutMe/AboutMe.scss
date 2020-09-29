@@ -83,6 +83,7 @@
     .about-me__container:last-child {
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin: 70px 30px;
     }
     .about-me__description_paraghraph {
         width: 60%;
@@ -94,7 +95,7 @@
         border-radius: 20px;
     }
     .about-me__container .my-biceps {
-        margin: 10px 0px;
+        margin: 10px 30px;
         width: 600px;
         border-radius: 20px;
     }
