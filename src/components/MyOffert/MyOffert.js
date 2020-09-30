@@ -10,10 +10,9 @@ const MyOffert = () => {
     const data = useStaticQuery(graphql`
           query MyOffert {
               backBackground: file(relativePath: {eq: "5.jpg"}) {
-                  id
                   childImageSharp {
-                    fixed {
-                      ...GatsbyImageSharpFixed
+                    fluid(maxWidth: 1500) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
               }
@@ -24,7 +23,7 @@ const MyOffert = () => {
         <section className="offert">
             <h1 className="offert__kicker">Zainteresowany współpracą?</h1>
             <Img
-                fixed={data.backBackground.childImageSharp.fixed}
+                fluid={data.backBackground.childImageSharp.fluid}
                 className="offert__photo"
             />
 

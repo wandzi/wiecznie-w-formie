@@ -60,8 +60,8 @@ const FAQSite = () => {
         myPhoto: file(relativePath: {eq: "2.jpg"}) {
             id
             childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 1500) {
+                ...GatsbyImageSharpFluid
               }
             }
         }
@@ -72,7 +72,7 @@ const FAQSite = () => {
     <section className="faq">
       <h1 className="faq__kicker">Czeka Cię pierwszy trening?</h1>
       <Img
-          fixed={data.myPhoto.childImageSharp.fixed}
+          fluid={data.myPhoto.childImageSharp.fluid}
           className="faq__my-photo"
       />
       <ul className="faq__list">
