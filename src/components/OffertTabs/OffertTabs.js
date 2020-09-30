@@ -72,11 +72,11 @@ const OffertTabs = () => {
                   <li>Treningi online – 70 zł</li>
               </ul>
           </li>
-        </ul>  
+        </ul> 
       </div>
     </TabPanel>
     <TabPanel>
-      <div className="offert__container">
+      <div className="offert__container offert__container--reverse">
         <Img
             fixed={data.diet.childImageSharp.fixed}
             className="offert__tab-photo"
@@ -101,11 +101,13 @@ const OffertTabs = () => {
             fixed={data.package.childImageSharp.fixed}
             className="offert__tab-photo"
         />
-        <p className="ofert__paragraph">Jeśli należysz do osób, które chcą osiągnąć spodziewane rezultaty jak najszybciej, a do tego zaoszczędzić, to warto zastanowić się nad tym pakietem </p>
-        <h3 className="offert__item-topic">Współpraca dietetyczna (1 miesiąc) + plan treningowy – 300zł</h3> 
-        <p>Każdy trening trwa pełną godzinę, w przypadku spóźnienia, przy braku możliwości przesunięcia sesji treningowej w czasie, 
-          może nastąpić skrócenie treningu. W przypadku zakupu pakietu treningów, nie 
-        </p>
+        <div className="tab__package-content">
+          <p className="ofert__paragraph">Jeśli należysz do osób, które chcą osiągnąć spodziewane rezultaty jak najszybciej, a do tego zaoszczędzić, to warto zastanowić się nad tym pakietem </p>
+          <h3 className="offert__item-topic">Współpraca dietetyczna (1 miesiąc) + plan treningowy – 300zł</h3> 
+          <p>Każdy trening trwa pełną godzinę, w przypadku spóźnienia, przy braku możliwości przesunięcia sesji treningowej w czasie, 
+            może nastąpić skrócenie treningu. W przypadku zakupu pakietu treningów, nie 
+          </p>
+        </div>
       </div>
     </TabPanel>
   </Tabs>

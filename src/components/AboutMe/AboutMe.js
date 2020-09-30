@@ -50,9 +50,9 @@ const AboutMe = () => {
                 fixed={data.myImage.childImageSharp.fixed}
                 className="my-photo"
             />
-            <h1 className="hello">Siemka!</h1>
+            <h1 className="about-me__hello">Siemka!</h1>
             <div className="about-me__description">
-                <p>Skoro już tu jesteś, to przeczytaj parę słów o mnie!</p>
+                <p className="about-me__hero-title">Skoro już tu jesteś, to przeczytaj parę słów o mnie!</p>
 
                 <div className="about-me__container">
                     <div className="about-me__description_paraghraph">
