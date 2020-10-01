@@ -110,7 +110,7 @@ const AboutMe = () => {
                     </div>
                     <Img
                         fixed={data.myBack.childImageSharp.fixed}
-                        className="my-biceps"
+                        className="my-back"
                     />
                 </div>
             </div>

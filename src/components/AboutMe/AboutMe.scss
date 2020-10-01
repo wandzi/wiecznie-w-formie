@@ -13,6 +13,12 @@
         margin-top: 60px;
         border-radius: 50%;
     }
+    .my-biceps {
+        transform: rotate(5deg);
+    }
+    .my-back {
+        transform: rotate(-5deg);
+    }
     .about-me__hello {
         color: $blue;
         font-weight: 300;
