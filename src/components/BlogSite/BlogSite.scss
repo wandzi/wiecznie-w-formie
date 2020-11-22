@@ -1,11 +1,23 @@
 @import "../../styles/variables.scss";
 
 .blog-section {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 
+    padding-top: 30px;
     font-size: 2rem;
     color: $black;
     background-color: $white;
     @include display-flex-column;
 }
+.post__title {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.excerpt {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.blog-section__posts {
+    margin-top: 20px;
+}
+

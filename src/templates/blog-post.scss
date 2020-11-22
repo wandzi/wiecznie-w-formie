@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+}
+.content__title {
+    margin-top: 60px;
+}
+
+
+@media screen and (min-width: 700px) {
+    .content__description {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+}
